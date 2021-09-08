@@ -1,9 +1,12 @@
 import React from "react";
+import "./TodoSearch.css"
 
 function TodoSearch (){
     return (
-      <input placeholder="cebolla" />
-
+      <div className = "container">
+        <input className = "InputSearch" placeholder="Escribe tu tarea..."  />
+      </div> 
+      
     );
 }
 

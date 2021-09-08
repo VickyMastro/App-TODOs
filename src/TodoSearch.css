@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.InputSearch{
+    width: 180px;
+    height: 60px;
+
+    border-radius: 1px;
+    border-color: #ff595e;
+}
