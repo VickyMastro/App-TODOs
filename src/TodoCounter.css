@@ -1,10 +1,6 @@
-body{
-    background-color: #b8f2e6;
-  
-  }
-  
-  .todoCounter{
-      color: #ff595e;
-      font-size: 30px;
-      text-align: center;
-  }
+.todoCounter {
+    font-size: 30px;
+    text-align: center;
+    color: #ff595e;
+
+}
