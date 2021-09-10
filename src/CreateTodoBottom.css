@@ -1,0 +1,27 @@
+.Button{
+    height: 64px;
+    width: 64px;
+    background-color: #ff595e;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Button:hover{
+    transform: rotate(224deg);
+}

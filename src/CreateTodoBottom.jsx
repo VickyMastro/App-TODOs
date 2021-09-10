@@ -1,8 +1,9 @@
 import React from "react";
+import "./CreateTodoBottom.css";
 
 function CreateTodoBottom (){
     return (
-      <button> + </button>
+      <button className= "Button"> + </button>
 
     );
 }
