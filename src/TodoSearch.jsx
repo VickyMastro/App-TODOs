@@ -3,9 +3,7 @@ import "./TodoSearch.css"
 
 function TodoSearch (){
     return (
-      <div className = "container">
-        <input className = "InputSearch" placeholder="Escribe tu tarea..."  />
-      </div> 
+        <input className = "InputSearch" placeholder="Escribe tu tarea..."  /> 
       
     );
 }
