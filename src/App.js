@@ -22,7 +22,11 @@ function App() {
 
       <TodoList>
         {todos.map((todo) => (
-          <TodoItem  key = {todo.text} texts = {todo.text} />
+          <TodoItem  
+            key = {todo.text} 
+            texts = {todo.text} 
+            completed = {todo.complete}
+          />
         ))}
       </TodoList>
       
