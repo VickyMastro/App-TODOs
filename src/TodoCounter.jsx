@@ -1,19 +1,12 @@
 import React from "react";
 import "./TodoCounter.css";
 
-function TodoCounter (){
+function TodoCounter ({todos}){
+    const completedTodos = todos.filter((todo) => !!todo.complete).length;
+    const totalTodos = todos.length;
     return (
-      <h2 className = "todoCounter" >Completaste 2 de 3 TODOs</h2>
-
+      <h2 className = "todoCounter" >Completaste {completedTodos} de {totalTodos} TODOs</h2>
     );
 }
 
 export { TodoCounter };
-
-/* OPCION PARA ESTILOS EN LINEA O ESTILOS EN ETIQUETAS EN REACT*/
-/*   const estilos = {
-  color: "red",
-  backgroundColor : "black",
-} 
-
-<h2 style= {estilos} >Completaste 2 de 3 TODOs</h2>  */
