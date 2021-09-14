@@ -1,16 +1,16 @@
 /* import "./App.css"; */
 import React from "react";
-import { TodoCounter } from "./TodoCounter";
-import { TodoSearch } from "./TodoSearch";
-import { TodoList } from "./TodoList";
-import { TodoItem } from "./TodoItem";
-import { CreateTodoBottom } from "./CreateTodoBottom";
+import { TodoCounter } from "./components/contador/TodoCounter";
+import { TodoSearch } from "./components/input/TodoSearch";
+import { TodoList } from "./components/lista/TodoList";
+import { TodoItem } from "./components/items/TodoItem";
+import { CreateTodoBottom } from "./components/boton/CreateTodoBottom";
 
 
 const todosDefault = [
-  {text: "cortar cebolla", complete: true },
+  {text: "cortar cebolla", complete: false },
   {text: "comer", complete: false },
-  {text: "estudiar", complete: true },
+  {text: "estudiar", complete: false },
   {text: "dormir", complete: false },
 ];
 
