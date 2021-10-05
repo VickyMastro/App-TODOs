@@ -1,0 +1,49 @@
+.formulario{
+    background: white;
+    width: 70%;
+    height: 50%;
+
+    text-align: center;
+    overflow: scroll;
+    background: #a4133c;
+}
+
+label{  
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #ff595e;
+    
+    border-bottom: 2px solid #ff595e;
+}
+
+textarea{
+    margin-top: 35px;
+    font-size: 25px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+button{
+    padding: 15px;
+
+    font-size: 20px;
+    border: 1px solid #a4133c;
+    border-radius: 3px;
+
+    color: white;
+    background: #ff595e;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+button:active{
+    color: black;
+    border-color: black;
+}
+
