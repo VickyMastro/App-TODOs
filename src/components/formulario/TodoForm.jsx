@@ -16,35 +16,42 @@ function TodoForm(){
 
     const onSubmit = (event) => {
         event.preventDefault();
-        addTodo(newTodoValue)
-        setOpenModal(false)
+        if (!newTodoValue) {
+            alert("No podes agregar un TODO vacio")
+        } else{
+            addTodo(newTodoValue);
+            setOpenModal(false);
+        }
     }
 
     return(
         <form onSubmit = {onSubmit} className="formulario">
-            <label>Escribe tu tarea</label>
-            <textarea 
-                value={newTodoValue}
-                onChange={onChange}
-                placeholder="Escribe aquí"
-                className="textarea"
-                rows="6"
-                cols="18"
-            />
+            <div className="form-container">
+                <label>Escribe tu tarea</label>
+                <hr />
+                <textarea 
+                    value={newTodoValue}
+                    onChange={onChange}
+                    placeholder="Escribe aquí"
+                    className="textarea"
+                    rows="6"
+                    cols="18"
+                />
 
-            <div className="buttons">
-                <button 
-                    type="button" 
-                    onClick={onCancel} 
-                    className="cancel">
-                    Cancelar
-                </button>
+                <div className="buttons">
+                    <button 
+                        type="button" 
+                        onClick={onCancel} 
+                        className="cancel">
+                        Cancelar
+                    </button>
 
-                <button 
-                    type="submit" 
-                    className="submit">
-                    Añadir
-                </button>
+                    <button 
+                        type="submit" 
+                        className="submit">
+                        Añadir
+                    </button>
+                </div>
             </div>
         </form>
     );
