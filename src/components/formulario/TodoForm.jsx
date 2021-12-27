@@ -24,6 +24,13 @@ function TodoForm(){
         }
     }
 
+    const onEnterPress = (e) => {
+        if(e.keyCode === 13) {
+            e.preventDefault();
+            onSubmit(e)
+        }
+      }
+
     return(
         <form onSubmit = {onSubmit} className="formulario">
             <div className="form-container">
@@ -32,6 +39,7 @@ function TodoForm(){
                 <textarea 
                     value={newTodoValue}
                     onChange={onChange}
+                    onKeyDown={onEnterPress}
                     placeholder="Escribe aquí"
                     className="textarea"
                     rows="6"

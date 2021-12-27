@@ -1,7 +1,9 @@
 .InputSearch{
-    margin: 0 24px;
+    width: calc(80% - 62px);
     height: 64px;
-    width: calc(100% - 62px);
+
+    display: block;
+    margin: 0 auto;
     margin-bottom: 10px;
 
     color: black;
